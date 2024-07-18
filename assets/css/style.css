@@ -1,0 +1,121 @@
+/* .vista {
+    background-color:#33475b ;
+    color:#C8D1D3 ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+} */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+header {
+    background-color: #3333cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    /* espaciado para la sección de 20 pixeles */
+}
+
+.custom-text {
+    color: #afa9b8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer {
+    background-color: #3333cc;
+    /* Color de fondo del footer */
+    color: #fff;
+    padding: 20px 0;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    /* Ancho máximo del contenido del footer */
+    margin: auto;
+    /* Centrar el contenido del footer horizontalmente */
+    text-align: center;
+}
+
+nav {
+    background-color: #3366ff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+
+}
+
+nav ul li a:hover {
+    background-color: #08aef0;
+}
+
+section img {
+    display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
+    height: 300px;
+}
+
+section p {
+    color: blue;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}    
+
+img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li img {
+    background-image: unset;
+    background-color: #3333cc;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+}
