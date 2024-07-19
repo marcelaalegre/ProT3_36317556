@@ -13,7 +13,7 @@
             </div>
             <?php elseif(session()->Perfil_id ==2): ?>
             <div>
-                <img class="center" height="100px" width="100px" src="<?php echo base_url ('assets/img/admin.png');?>">
+                <img class="center" height="100px" width="100px" src="<?php echo base_url ('assets/img/entornos-de-desarrollo.jpg');?>">
             </div>
             <?php endif;?>
         </div>
