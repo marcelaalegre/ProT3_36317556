@@ -28,7 +28,7 @@ class Login_Controller extends baseController
             $pass = $data['Pass'];
             $ba = $data['Baja'];
             if ($ba == 'SI'){
-                $session->setFlashdata('msg','usuario dado de baja');
+                $session->setFlashdata('msg','Usuario dado de baja');
                 return redirect()->to('/Login_Controller');
             }
             //se verifican los datos ingresados para iniciar, si cumple la verificacion inicia la sesion 
@@ -47,8 +47,6 @@ class Login_Controller extends baseController
               ];
               //se cumple la verificacion inicia sesion
               $session->set ($ses_data);
-              
-              session ()->setFlashdata('msg','Bienvenido!!');
               return redirect()->to('/panel');
               //return redirect()->to('/prueba');//pagina principal
 
@@ -64,17 +62,17 @@ class Login_Controller extends baseController
             //se cumple la verificacion inicia la sesion
               $session->set($ses_data);
 
-               session()->setFlashdata('msg', 'Bienvenido!!');
+               session()->setFlashdata('msg', 'Bienvenido');
                return redirect()->to('/panel');
             //return redirect()->to('/prueba');//pagina princ
             }else{
                 //no paso la validacion de la password
-                $session->setFlashdata('msg','Password_Incorrecta');
-                return redirect()->to('/Login_Controller');
+                $session->setFlashdata('msg','Contraseña incorrecta');
+                return redirect()->to('/login');
             }
         }else{
-            $session->setFlashdata('msg','No existe el Email o es Incorrecto');
-            return redirect()->to('/Login_Controller');
+            $session->setFlashdata('msg','No existe el email o es incorrecto');
+            return redirect()->to('/login');
         }
     }
 

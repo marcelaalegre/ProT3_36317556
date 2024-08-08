@@ -6,14 +6,15 @@
                     <?= session()->getFlashdata('msg');?>
                 </div>
             <?php endif;?>
-            <br><br>
             <?php if(session()->Perfil_id == 1): ?>
-            <div> 
-                <img class="center" height="100px" width="100px" src="<?php echo base_url ('assets/img/admin.png');?>">
+            <div style="margin-bottom:3rem; color: blue;"> 
+                <h1>Bienvenido</h1>   
+                <img class="center" height="auto" width="526px" src="<?php echo base_url ('assets/img/admin.png');?>">
             </div>
             <?php elseif(session()->Perfil_id ==2): ?>
-            <div>
-                <img class="center" height="100px" width="100px" src="<?php echo base_url ('assets/img/entornos-de-desarrollo.jpg');?>">
+            <div style="margin-bottom:3rem; color: blue;">
+                <h1>Bienvenido</h1>   
+                <img class="center" height="auto" width="526px" src="<?php echo base_url ('assets/img/entornos-de-desarrollo.jpg');?>">
             </div>
             <?php endif;?>
         </div>

@@ -35,13 +35,13 @@
             </ul>
         </div>
         <?php elseif(session()->Perfil_id == 2): ?>
-            <div class="btn btn-info active btnUser btn-sm">
-                <a href="">CLIENTE: <?php echo session('Nombre'); ?> </a>
-            </div>
             <!--NAVBAR PARA CLIENTES que puedan comprar-->
             <a class="navbar-brand" href="#"></a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link">Cliente: <?php echo session('Nombre'); ?> </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href='quienes_somos'> Quienes somos</a></li>
                     </li>
